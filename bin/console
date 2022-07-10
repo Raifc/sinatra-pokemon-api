@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require 'dotenv/load'
+
+require "bundler/setup"
+require "pry"
+
+require 'rake'
+require 'sinatra/activerecord'
+require 'sinatra/activerecord/rake'
+require './app/application'
+require './app/controllers/controllers'
+require './config/database'
+require './lib/utils'
+
+Pry.start
