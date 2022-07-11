@@ -20,8 +20,12 @@ class Application < Sinatra::Base
           PokemonsController.all
 
         rescue StandardError => e
-          logger.warn(e)
-          APIResponse.response_error_code(500)
+          puts e.inspect
+          [
+            500,
+            { 'Content-Type' => 'application/json' },
+            [{ message: 'Something went wrong' }.to_json]
+          ]
         end
       end
     end
