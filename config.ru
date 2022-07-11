@@ -1,4 +1,4 @@
-#\ -w -p 3030
+#\ -w
 # frozen_string_literal: true
 
 require './app/application'

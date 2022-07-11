@@ -2,7 +2,7 @@ default: &default
   adapter: postgresql
   encoding: unicode
   pool: 2
-  host: localhost
+  host: sinatra-db
   port: 5432
 
 development:
