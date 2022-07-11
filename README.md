@@ -1,5 +1,5 @@
 # Uma API simples feita com Sinatra e Docker
-Essa é uma API simples feita utilizando o framework Sinatra utilizando Postgres e com o Docker. 
+Essa é uma API simples feita utilizando o framework Sinatra e banco de dados Postgres com Docker. 
 
 ## Executando a aplicação
 Em seu terminal rode: `docker-compose build`
